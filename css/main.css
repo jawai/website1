@@ -188,7 +188,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 500px) {
 
-  /* NAVIGATION */
+  /* NAVIGATION MOBILE */
   .nav {
     display: none;
   }
@@ -246,15 +246,15 @@ input[type=submit]:hover {
   .img-second {
     display: block;
     margin: auto;
-    width:40vw;
+    width: 100%;
   }
 
   .hero-third {
     background: linear-gradient(
       rgba(0,0,0, 0.2),
-      rgba(0,0,0, 0.2)
+      rgba(0,0,0, 0.3)
       ), url("../img/service.jpeg") no-repeat center center fixed;
-    background-size: cover;
+    background-size: inherit;
     position: relative;
     min-height: 90vh;
     margin: 40px 15px 0px 15px;
