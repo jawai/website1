@@ -21,7 +21,7 @@ p {
   font-family: 'Eczar', serif;
 }
 
-/* NAVIGATION */
+/* NAVIGATION MOBILE*/
 .nav {
     list-style-type: none;
     margin: 10px 15px 0px 15px;
@@ -184,17 +184,144 @@ input[type=submit]:hover {
     padding-top: 20px;
 }
 
-/* MEDIA QUERIES*/
+/* MEDIA QUERIES - FOR MOBILE */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 500px) {
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
+  /* NAVIGATION */
+  .nav {
+    display: none;
+  }
+
+  /* MAIN MOBILE */
+  .content-first {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .content-second {
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0 15% 0 15%;
+  }
+
+  .content-third {
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0 15% 0 15%;
+  }
+
+  .content-fourth {
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0 15% 0 15%;
+  }
+
+  .content-list {
+    font-weight: 600;
+  }
+
+  .hero-first {
+    background: url("../img/first.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 95vh;
+    margin: 20px 15px 0px 15px;
+    display: flex;
+    justify-content: center; /* horizontal align */
+    align-items: center; /* vertical align */
+  }
+
+  .hero-second {
+    background-color: #6699ff;
+    position: relative;
+    min-height: 90vh;
+    margin: 40px 15px 0px 15px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center; /* horizontal align */
+  }
+
+  .img-second {
+    display: block;
+    margin: auto;
+    width:40vw;
+  }
+
+  .hero-third {
+    background: linear-gradient(
+      rgba(0,0,0, 0.2),
+      rgba(0,0,0, 0.2)
+      ), url("../img/service.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 90vh;
+    margin: 40px 15px 0px 15px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center; /* horizontal align */
+  }
+
+  .hero-fourth {
+    background-color: #F5EDE3;
+    position: relative;
+    min-height: 90vh;
+    margin: 40px 15px 0px 15px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center; /* horizontal align */
+  }
+
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* horizontal align */
+    align-items: center; /* vertical align */
+  }
+
+  /* CONTACT FORM */
+  .placeholder {
+    font-family: 'Eczar', serif;
+  }
+
+  input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #154890;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+
+  input[type=submit] {
+      background-color: #6699FF;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+      background-color: #154890;
+  }
+
+  .container {
+      border-radius: 5px;
+      background-color: #F5EDE3	;
+      padding: 20px;
+  }
+
+  /* ===============
+      ALL: IE Fixes
+     =============== */
+
+  .ie7 .title {
+      padding-top: 20px;
+  }
+
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -206,18 +333,5 @@ input[type=submit]:hover {
 
     .oldie nav a {
         margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-    nav {
-    }
-
-
-@media only screen and (min-width: 1140px) {
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
     }
 }
